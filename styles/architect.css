@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
 }
+.description{
+    color: #727272;
+}
 .btn-primary{
 border: none;
 border-radius: 0.5rem;
@@ -80,7 +83,6 @@ nav li a:hover{
     font-weight: 700;
 }
 .banner-description{
-    color: #727272;
     margin: 40px 0;
 }
 .banner img{
@@ -88,9 +90,45 @@ nav li a:hover{
     height: 100%;
     object-fit: cover;
 }
-
-
-
+/*----------------------------->Main section Styles <----------------------------- */
+main{
+    margin: 0 15rem;
+}
+/* ---------->Team styles start <------------------- */
+.team-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.team-img-container img{
+    width: 17.5rem;
+    height: 17.5rem;
+    object-fit: cover;
+}
+.team-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #131313;
+}
+.team-title .quick{
+    color: #727272;
+    font-weight: 500;
+}
+.team-title .features{
+    color: #FF900E;
+    font-weight: 700;
+}
+.team-description{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
 
 
 
@@ -107,13 +145,23 @@ nav li a:hover{
     header{
         padding: 20px;
     }
-    nav{
+    nav,
+    .team-container
+    {
         flex-direction: column;
         gap: 2rem;
     }
     nav > ul{
         gap: 1rem;
     }
+    main{
+        margin: 0 1.25rem;
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
+    }
+
+
 
 }
 /* -------------- Tablet or Medium Devices-------------- */
@@ -121,8 +169,13 @@ nav li a:hover{
     header{
         padding: 50px;
     }
-    nav{
+    nav,
+    .team-container
+    {
         flex-direction: column;
         gap: 2rem;
+    }
+    main{
+        margin: 0 3rem;
     }
 }

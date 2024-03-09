@@ -8,6 +8,11 @@
 .description{
     color: #727272;
 }
+.section-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 .btn-primary{
 border: none;
 border-radius: 0.5rem;
@@ -65,11 +70,7 @@ nav li a:hover::after{
 nav li a:hover{
     color: #131313;
 }
-.nav-title{
-    color: #131313;
-    font-size: 2.8rem;
-    font-weight: 700;
-}
+
 .banner-content{
     max-width: 800px;
     text-align: center;
@@ -129,6 +130,37 @@ main{
     margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
+/* ---------------->Fact section styles <--------------------- */
+.fact{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.fact-description{
+ margin-top: 1.5rem;
+ margin-bottom: 5rem;
+}
+.fact-info-container{
+    display: flex;
+    justify-content: space-around;
+}
+.info-box{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 1.5rem;
+}
+.box-title{
+    color: #424242;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+}
+.box-description{
+    color: #727272;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 
 
 
@@ -146,7 +178,8 @@ main{
         padding: 20px;
     }
     nav,
-    .team-container
+    .team-container,
+    .fact-info-container
     {
         flex-direction: column;
         gap: 2rem;
@@ -177,5 +210,8 @@ main{
     }
     main{
         margin: 0 3rem;
+    }
+    .fact-info-container{
+        gap: 0.5rem;
     }
 }

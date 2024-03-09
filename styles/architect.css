@@ -130,6 +130,10 @@ main{
     margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
+/* ------------------------Features Section styles start----------------- */
+
+
+/* ------------------------Features section end------------------- */
 /* ---------------->Fact section styles <--------------------- */
 .fact{
     margin-top: 5rem;
@@ -161,10 +165,40 @@ main{
     font-size: 1.1rem;
     font-weight: 600;
 }
+/* ---------Sponsor section style start------------- */
+.sponsor{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.sponsor-description{
+    margin-top: 1.5rem;
+}
+.sponsor-img-container{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.sponsor-img-container img{
+    width: 10.5rem;
+    height: 3rem;
+}
 
-
-
-
+/* ------------Footer section style start-------------- */
+footer{
+    margin: 5rem 15rem;
+    border-radius: 8px;
+    background: #FFF4E7;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-description{
+    color: #424242;
+    font-size: 1.25rem;
+    padding: 0 .5rem;
+}
 
 
 
@@ -179,7 +213,8 @@ main{
     }
     nav,
     .team-container,
-    .fact-info-container
+    .fact-info-container,
+    .sponsor-img-container
     {
         flex-direction: column;
         gap: 2rem;
@@ -193,6 +228,9 @@ main{
     .team-img-container{
         grid-template-columns: 1fr;
     }
+    footer{
+        margin: 1rem 1.25rem;
+    }
 
 
 
@@ -203,7 +241,8 @@ main{
         padding: 50px;
     }
     nav,
-    .team-container
+    .team-container,
+    .sponsor-img-container
     {
         flex-direction: column;
         gap: 2rem;
@@ -213,5 +252,8 @@ main{
     }
     .fact-info-container{
         gap: 0.5rem;
+    }
+    footer{
+        margin: 1rem 3rem;
     }
 }
